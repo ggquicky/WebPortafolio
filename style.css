@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+
+@media only screen and (min-width:769px){
+    *{
+     margin:0px;
+     padding:0px;
+     font-family: 'roboto';
+     
+     }
+     section{
+     height:100vh;
+     max-width:100%;
+   }
+   .welcome-section{
+     
+     background-color: #161d20;
+     padding:0px;
+     color:#cccccc;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+     .welcome-section > div> h1{
+       color: #36498f ;
+       font-size:40px;
+       
+     }
+     .welcome-section > div > h2{
+       color: #2d7c9d;
+     } 
+     #projects {
+       background-color: #36498f;
+     padding:20px;
+     color:#cccccc;
+     }
+     #contact {
+        background-color: #a4a29e;
+     padding:20px;
+     color:#cccccc;
+     }
+   nav {
+     position:fixed;
+     display:flex;
+     top:0;
+     left:0;
+     width:100%;
+     height:80px;
+     background-color: #2d7c9d	;
+     justify-content: flex-end;
+   }
+   nav > ul{
+     display:flex;
+     flex-direction: row;
+     
+     align-items: center;
+   }
+   li{
+     list-style: none;
+   }
+   nav > ul> li{
+     width:150px;
+     font-size: 1.8rem;
+   
+   }
+   
+   
+   a{
+     text-decoration: none;
+     color: #cccccc;
+   }
+   
+   }
+   
+   @media only screen and (max-width: 768px) { 
+     *{
+       margin:0px;
+     padding:0px;
+       font-family: 'roboto';
+     }
+     section{
+     height:100vh;
+     max-width:100%;
+   }
+     .welcome-section{
+     
+     background-color: #161d20;
+     padding:0px;
+     color:#cccccc;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+     .welcome-section > div> h1{
+       color: #36498f ;
+       font-size:25px;
+       
+     }
+     .welcome-section > div > h2{
+       color: #2d7c9d;
+     } 
+     #projects {
+       background-color: #2d7c9d;
+     padding:15px;
+     color:#cccccc;
+     }
+     #contact {
+        background-color: #a4a29e;
+     padding:20px;
+     color:#cccccc;
+     }
+    }
