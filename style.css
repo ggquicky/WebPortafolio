@@ -1,3 +1,10 @@
+:root {
+  --main-Dawn: #A4a29e;
+  --main-Chambray: #36498F ;
+  --main-JellyBean: #2D7C9D;
+  --main-Bunker: #161D20;
+  --main-silver:#cccccc;
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +29,8 @@ html {
 }
 
 
+
+
 @media only screen and (min-width:769px){
     *{
      margin:0px;
@@ -29,68 +38,84 @@ html {
      font-family: 'roboto';
      
      }
-     section{
-     height:100vh;
-     max-width:100%;
-   }
-   .welcome-section{
+  
+  
+.nav {
+  position:fixed;
+  display:flex;
+  top:0;
+  left:0;
+  width:100%;
+  height:80px;
+  background-color: #2d7c9d	;
+  justify-content: flex-end;
+}
+.nav > ul{
+  display:flex;
+  flex-direction: row;
+  
+  align-items: center;
+}
+
+.nav > ul> li{
+  width:150px;
+  font-size: 1.8rem;
+
+}
+.nav> ul> li> a{
+ color: var(--main-silver);
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  }
+
+section{
+    height:100vh;
+    max-width:100%;
+  }   
+
+ .welcome-section{
      
-     background-color: #161d20;
+     background-color: var(--main-Bunker);
      padding:0px;
-     color:#cccccc;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
    }
-     .welcome-section > div> h1{
-       color: #36498f ;
+
+  .welcome-section > div> img {
+    width: 250px;
+    border-radius:30px;
+    height:auto;
+  }
+  
+  
+  
+   .welcome-section > h1{
+       color: var(--main-Chambray);
        font-size:40px;
        
      }
-     .welcome-section > div > h2{
-       color: #2d7c9d;
+   .welcome-section  > h2{
+       color: var(--main-JellyBean);
      } 
-     #projects {
-       background-color: #36498f;
-     padding:20px;
-     color:#cccccc;
-     }
-     #contact {
-        background-color: #a4a29e;
-     padding:20px;
-     color:#cccccc;
-     }
-   nav {
-     position:fixed;
-     display:flex;
-     top:0;
-     left:0;
-     width:100%;
-     height:80px;
-     background-color: #2d7c9d	;
-     justify-content: flex-end;
-   }
-   nav > ul{
-     display:flex;
-     flex-direction: row;
+   .projects {
+     background-color: #36498f;
+     padding:80px;
+     color:var(--main-silver);
      
-     align-items: center;
-   }
-   li{
-     list-style: none;
-   }
-   nav > ul> li{
-     width:150px;
-     font-size: 1.8rem;
-   
-   }
-   
-   
-   a{
-     text-decoration: none;
-     color: #cccccc;
-   }
+     }
+   .contact {
+     background-color: var(--main-Dawn);
+     padding:80px;
+     color:var(--main-Bunker);
+     }
    
    }
    
@@ -100,36 +125,82 @@ html {
      padding:0px;
        font-family: 'roboto';
      }
-     section{
-     height:100vh;
-     max-width:100%;
-   }
+      
+.nav {
+  position:fixed;
+  display:flex;
+  top:0;
+  left:0;
+  width:100%;
+  height:80px;
+  background-color: #2d7c9d	;
+  justify-content: flex-end;
+}
+
+.nav > ul{
+  display:flex;
+  flex-direction: row;
+  
+  align-items: center;
+}
+
+.nav > ul> li{
+  width:150px;
+  font-size: 1.8rem;
+
+}
+.nav> ul> li> a{
+ color: var(--main-silver);
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  }
+
+section{
+    height:100vh;
+    max-width:100%;
+  }
+   
      .welcome-section{
-     
-     background-color: #161d20;
+     background-color: var(--main-Bunker);
      padding:0px;
-     color:#cccccc;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
    }
-     .welcome-section > div> h1{
-       color: #36498f ;
+  .welcome-section > div> img {
+    width: 200px;
+    border-radius:30px;
+    height:auto;
+  }
+   
+  
+     .welcome-section > h1{
+       margin-top:20px;
+       color: var(--main-Chambray)  ;
        font-size:25px;
        
      }
-     .welcome-section > div > h2{
-       color: #2d7c9d;
-     } 
-     #projects {
-       background-color: #2d7c9d;
-     padding:15px;
-     color:#cccccc;
+     .welcome-section  > h2{
+       color:var(--main-JellyBean) ; 
+       font-size:15px;
      }
-     #contact {
-        background-color: #a4a29e;
-     padding:20px;
-     color:#cccccc;
+     .projects {
+     background-color: var(--main-Chambray);
+     padding:80px 0px 80px 0;
+     color:var(--main-silver);
      }
+     .contact {
+     background-color: var(--main-silver) ;
+     padding:80px 0px 80px 0;
+     color:var(--main-Bunker);
+     }
+     
+     
     }
