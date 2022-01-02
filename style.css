@@ -90,7 +90,7 @@ html {
    .nav > ul{
      display:flex;
      flex-direction: row;
-     
+     margin-right:5%;
      align-items: center;
    }
    li{
@@ -174,7 +174,7 @@ html {
      flex-direction: row;
      gap:20px;
      align-items: center;
-     margin-right:15px;
+     margin-right:5%;
    }
    li{
      list-style: none;
