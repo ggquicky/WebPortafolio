@@ -141,7 +141,14 @@ html {
   transform: translateX(0);
   transition: transform 0.3s ease-out;
 }
-     
+ 
+#navbtn{
+  display:none;
+}
+.closebtn{
+  display: none;
+}
+
    .nav {
      position:fixed;
      display:flex;
@@ -217,6 +224,14 @@ html {
     color: var(--main-silver);
     
   }
+  .contact-link > a >i{
+    padding: 10px;
+    
+  }
+  .contact-link > a:hover{
+    color: var(--main-Bunker);
+    font-size: 2.2rem;
+  }
 .counter{
     margin-top:10%;
     color:var(--main-Bunker);
@@ -233,6 +248,7 @@ html {
   padding: 10px 28px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 12px;
 }
 #reset{
    border-color: var(--main-silver);
@@ -358,48 +374,59 @@ html {
   transform: translateX(0);
   transition: transform 0.3s ease-out;
 }
-     
-     
-     
-     .nav {
-     position:fixed;
-     display:flex;
-     top:0;
-     left:0;
-     width:100%;
-     height:80px;
-     background-color: var(--main-JellyBean)	;
-     justify-content: flex-end;
-   }
-   .nav > ul{
-     display:flex;
-     flex-direction: row;
-     gap:20px;
-     align-items: center;
-     margin-right:10%;
-   }
-   li{
-     list-style: none;
-   }
-   .nav > ul> li{
-     width:auto;
-     font-size: 1.3rem;
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--main-JellyBean);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--main-silver);
+  display: block;
+  transition: 0.3s;
+
+}
+
+.nav a:hover{
+  color: var(--main-Bunker);
+}
+
+.nav  .closebtn {
+  
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.navbtn{
+  display: block;
+  padding: 2vh;
+  height: 80px;
+  font-size:30px;
+  cursor:pointer;
+  background-color: var(--main-JellyBean);
+  color: var(--main-silver);
+  width:100%;
+  position:fixed;
+}
    
-   }
-   
-   
-   .nav> ul> li> a{
-    color: var(--main-silver);
-  }
- .nav> ul> li> a:hover{
-    color: var(--main-Bunker);
-  } 
-     
-   
-   a{
+  a{
      text-decoration: none;
      }
-    .contact {
+ .contact {
      background-color: var(--main-Dawn);
      padding:0px;
      color:var(--main-Bunker);
@@ -434,7 +461,15 @@ html {
     color: var(--main-silver);
     
   }
-  
+
+  .contact-link > a >i{
+    padding: 10px;
+    
+  }
+  .contact-link > a:hover{
+    color: var(--main-Bunker);
+    font-size: 2.2rem;
+  }
    .counter{
     margin-top:10%;
     color:var(--main-Bunker);
@@ -451,8 +486,10 @@ html {
   padding: 10px 28px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 12px;
 }
 #reset{
+  
    border-color: var(--main-silver);
   color: var(--main-silver);
      }
