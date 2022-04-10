@@ -83,7 +83,7 @@ html {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 32px;
   width: 100%;
   
   max-width: 1280px;
@@ -315,8 +315,8 @@ html {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 32px;
   width: 100%;
   
   max-width: 1280px;
@@ -335,6 +335,7 @@ html {
 
 .project:hover .code {
   color: var(--main-silver);
+
 }
 
 .project-image {
