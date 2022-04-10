@@ -102,12 +102,21 @@ html {
 
 .project:hover .code {
   color: var(--main-silver);
+  
 }
 
 .project-image {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+  border-radius: 40px;
+  box-shadow: 4px 4px 15px 1px #3D3D3D;
+}
+
+.project-image:hover{
+  
+  box-shadow: 4px 4px 15px 1px white;
+  
 }
 
 .project-title {
@@ -130,6 +139,7 @@ html {
 
 .btn-show-all:hover {
   background: var(--main-silver);
+  
 }
 
 .btn-show-all:hover > i {
@@ -342,6 +352,8 @@ html {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+  border-radius: 40px;
+  box-shadow: 4px 4px 15px 3px #000000;
 }
 
 .project-title {
